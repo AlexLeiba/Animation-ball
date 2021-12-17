@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("https://cdn.pixabay.com/photo/2014/10/14/20/31/the-ball-488725_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  position: relative;
+  top: 300px;
+}
+
+.ball2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: rgb(38, 41, 36);
+
+  position: relative;
+  left: 200px;
+
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/2048px-Soccerball.svg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 10px black;
+
+  animation-name: cerc;
+  animation-iteration-count: infinite;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-delay: 2.5s;
+}
+
+@keyframes cerc {
+  from {
+    background-color: rgb(44, 58, 30);
+  }
+  to {
+    transform: translate(500px) translateY(-350px) scale(0.1) rotate(2000deg);
+    background-color: rgb(44, 58, 30);
+  }
+}
+
+@keyframes leg {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes ball {
+  from {
+    box-shadow: -20px -20px 60px black;
+  }
+  to {
+    transform: translate(170px) translateY(-80px) rotate(400deg);
+  }
+}
+
+.leg {
+  height: 200px;
+  width: 50px;
+  background-color: rgb(7, 7, 90);
+  border-radius: 20%;
+  position: relative;
+  bottom: 210px;
+  left: 110px;
+  box-shadow: 10px -10px 80px black;
+
+  animation-name: leg;
+  animation-duration: 4.5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.legSupport {
+  height: 200px;
+  width: 10px;
+  background-color: rgb(63, 57, 57);
+  border: dotted rgb(156, 153, 107) 1px;
+  border-radius: 20%;
+  box-shadow: 10px -10px 10px black;
+  position: relative;
+  bottom: 305px;
+  left: 130px;
+}
+
+.ball {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: rgb(38, 41, 36);
+
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/2048px-Soccerball.svg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: -5px 10px 10px black;
+
+  animation-name: ball;
+  animation-iteration-count: infinite;
+  animation-duration: 4.5s;
+  animation-delay: 2.5s;
+  animation-timing-function: linear;
+}
